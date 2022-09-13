@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+/* すべてのページに適用 */
+html {
+  font-family: sans-serif;
+}
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+body {
+  font-size: 16px;
+  color: #000000;
+  line-height: 1;
+  background-color: #ffffff;
+}
+img {
+    max-width: 100%;
+}
+
+/* ヘッダー */
+.top_img {
+  width: 800px;
+}
+
+/* フッター */
+footer {
+  margin-top: 50px;
+  text-align: center;
+}
+
+/* メイン */
+.wrapper {
+  display: block;
+  text-align: center;
+}
+p {
+  padding: 2px;
+  line-height: 1.5em;
+}
+.profile {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+.profile_text {
+  padding: 1px;
+  font-size: medium;
+}
+.profile_box img {
+  width: 280px;
+}
+.skill {
+  margin-bottom: 30px;
+}
+.skill_group_all {
+  display: flex;
+  justify-content: center;
+}
+.skill_group {
+  margin: 30px;
+}
+.skill_group img {
+  margin-bottom: 20px;
+}
+.star_img {
+  width: 150px;
+}
+
+/* 作品サイト部分 */
+dt {
+  font-size: 30px;
+  color: peru;
+  margin: 10px;
+  font-weight: bold;
+}
+dd {
+  line-height: 1.5em;
+  margin-bottom: 10px;
+}
+.creation ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 50px;
+}
+.site_img:hover {
+  transform: scale(1.1,1.1);
+  opacity: 0.8;
+}
+.item_title {
+  font-weight: bold;
+  display: inline;
+  border: 2px solid gainsboro;
+  border-radius: 1.0em;
+  padding: 7px;
+  text-align: center;
+}
+.development {
+  margin: 30px;
+}
+.development p {
+  margin-top: 15px;
+}
+.git {
+  margin: 30px;
+}
+.url {
+  color: grey;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: smaller;
+  }
+  .top_img {
+    width: 100%;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .profile_box img {
+    width: 60%;
+  }
+
+  .skill_group_all {
+    display: flex;
+    flex-direction: column;
+  }
+  .skill_group {
+    margin: 20px;
+  }
+
+  .creation ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0%;
+  }
+  .site_img {
+    width: 80%;
+  }
+}
