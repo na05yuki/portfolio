@@ -110,7 +110,11 @@ dd {
   padding: 7px;
   text-align: center;
 }
-.item_title_link {
+.item_link {
+  display: flex;
+  justify-content: center;
+}
+.item_link_title {
   font-weight: bold;
   display: inline;
   border: 2px solid gainsboro;
